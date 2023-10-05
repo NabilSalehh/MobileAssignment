@@ -1,0 +1,8 @@
+<resources>
+    <color name="app_background">#FFFFFF</color>
+    <color name="text_color">#000000</color>
+    <color name="button_background">#2196F3</color>
+    <color name="button_text_color">#C21515</color>
+    <color name="header_text_color">#2196F3</color>
+    <color name="header_background_color">#2196F3</color>
+</resources>
