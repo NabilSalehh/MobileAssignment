@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Nab Banking Plus</string>
+    <string name="total_house_price">Total House Price</string>
+    <string name="down_payment">Down Payment</string>
+    <string name="loan_tenure">Loan Tenure (months)</string>
+    <string name="interest_rate">Interest Rate (%)</string>
+    <string name="calculate_emi">Calculate EMI</string>
+    <string name="result">Result: </string>
+    <string name="enter_total_house_price">Enter Total House Price</string>
+    <string name="enter_down_payment">Enter Down Payment</string>
+    <string name="enter_loan_tenure">Enter Loan Tenure</string>
+    <string name="enter_interest_rate">Enter Interest Rate</string>
+    <string name="error_message">Invalid input. Please check values.</string>
+</resources>
