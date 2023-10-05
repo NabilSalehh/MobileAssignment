@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/app_background"
+    tools:context=".MainActivity">
+
+    <!-- Header block -->
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:textColor="@color/text_color"
+        android:background="@color/header_background_color" />
+
+    <!-- total house price block -->
+    <TextView
+        android:id="@+id/textViewTotalHousePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeader"
+        android:layout_marginTop="24dp"
+        android:text="@string/total_house_price"
+        android:textSize="18sp"
+        android:textColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/editTextTotalHousePrice"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewTotalHousePrice"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_total_house_price"
+        android:inputType="numberDecimal" />
+
+    <!-- down payment block -->
+    <TextView
+        android:id="@+id/textViewDownPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTotalHousePrice"
+        android:layout_marginTop="16dp"
+        android:text="@string/down_payment"
+        android:textSize="18sp"
+        android:textColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/editTextDownPayment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewDownPayment"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_down_payment"
+        android:inputType="numberDecimal" />
+
+    <!-- loan tenure block -->
+    <TextView
+        android:id="@+id/textViewTenure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDownPayment"
+        android:layout_marginTop="16dp"
+        android:text="@string/loan_tenure"
+        android:textSize="18sp"
+        android:textColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/editTextTenure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewTenure"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_loan_tenure"
+        android:inputType="number" />
+
+    <!-- interest rate block -->
+    <TextView
+        android:id="@+id/textViewInterestRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTenure"
+        android:layout_marginTop="16dp"
+        android:text="@string/interest_rate"
+        android:textSize="18sp"
+        android:textColor="@color/text_color" />
+
+    <EditText
+        android:id="@+id/editTextInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewInterestRate"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_interest_rate"
+        android:inputType="numberDecimal" />
+    <!-- emi result -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculateEMI"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/text_color" />
+    <!-- calculate emi button -->
+    <Button
+        android:id="@+id/buttonCalculateEMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextInterestRate"
+        android:layout_marginTop="24dp"
+        android:text="@string/calculate_emi"
+        android:background="@color/button_background"
+        android:textColor="@color/text_color" />
+</RelativeLayout>
